@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Pomodoro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crypto Pomodoro</h1>
+        <div class="session-buttons">
+            <button onclick="setWorkSession()">Work Session</button>
+            <button onclick="setShortBreak()">Short Break</button>
+            <button onclick="setLongBreak()">Long Break</button>
+        </div>
+        <div class="timer-wrapper">
+            <div id="session-type">Work Session</div>
+            <div class="coin-circle">
+                <div id="timer" class="timer-container">
+                    <span id="timer-text">25:00</span>
+                </div>
+                <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png" alt="Bitcoin Logo" class="crypto-logo" style="--i: 0;">
+                <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" alt="Ethereum Logo" class="crypto-logo" style="--i: 1;">
+                <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1839.png" alt="Binance Logo" class="crypto-logo" style="--i: 2;">
+                <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/3897.png" alt="OKX Logo" class="crypto-logo" style="--i: 3;">
+                <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5426.png" alt="Solana Logo" class="crypto-logo" style="--i: 4;">
+                <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/31746.png" alt="Hyperliquid Logo" class="crypto-logo" style="--i: 5;">
+                <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/20947.png" alt="Sui Logo" class="crypto-logo" style="--i: 6;">
+                <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png" alt="Tether Logo" class="crypto-logo" style="--i: 7;">
+                <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/11419.png" alt="Toncoin Logo" class="crypto-logo" style="--i: 8;">
+                <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2010.png" alt="Cardano Logo" class="crypto-logo" style="--i: 9;">
+                <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5805.png" alt="Avalanche Logo" class="crypto-logo" style="--i: 10;">
+                <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1975.png" alt="Chainlink Logo" class="crypto-logo" style="--i: 11;">
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="startTimer()">Start Mining</button>
+            <button onclick="pauseTimer()">Pause Block</button>
+            <button onclick="resetTimer()">Reset Chain</button>
+        </div>
+        <div class="history-wrapper">
+            <h2>History</h2>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
